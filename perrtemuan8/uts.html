@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="firefox">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi formulir penerbangan</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulir Reservasi Penerbangan</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="3">Nama Penumpang</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="gelar" placeholder="Gelar" required></td>
+                <td><input type="text" name="namaDepan" placeholder="Nama Depan" required></td>
+                <td><input type="text" name="namaBelakang" placeholder="Nama Belakang" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="tanggalLahir" placeholder="Tanggal Lahir" required></td>
+                <td colspan="2"><input type="email" name="email" placeholder="Email" required></td>
+            </tr>
+            <tr>
+                <th colspan="3">Alamat</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="alamat" placeholder="Alamat Jalan" required></td>
+                <td><input type="text" name="rtRw" placeholder="rt/rw" required></td>
+                <td><input type="text" name="kelDesa" placeholder="Kel/Desa" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="kecamatan" placeholder="Kecamatan" required></td>
+                <td><input type="text" name="kabKota" placeholder="Kab/Kota" required></td>
+                <td><input type="text" name="provinsi" placeholder="Provinsi" required></td>
+            </tr>
+            <tr>
+                <th colspan="1">Tanggal Penerbangan</th>
+                <th colspan="1">Waktu Penerbangan</th>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="1"><input type="date" name="tanggalPenerbangan" required></td>
+                <td><input type="time" name="waktuPenerbangan" required></td>
+            </tr>
+            <tr>
+                <th colspan="1">Berangkat Dari</th>
+                <th colspan="1">Tanggal Penerbangan</th>
+                <th colspan="1">Maskapai Penerbangan</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="berangkatDari" required>
+                        <option value="">Pilih kota keberangkatan</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Denpasar">Denpasar</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="tujuan" required>
+                        <option value="">Pilih kota tujuan</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Denpasar">Denpasar</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="maskapai" required>
+                        <option value="">Pilih maskapai penerbangan</option>
+                        <option value="Garuda Indonesia">Garuda Indonesia</option>
+                        <option value="Lion Air">Lion Air</option>
+                        <option value="AirAsia">AirAsia</option>
+                        <option value="Citilink">Citilink</option>
+                        <option value="Sriwijaya Air">Sriwijaya Air</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Pesan Tiket</button>
+        </div>
+    </form>
+</body>
+</html>
+    
+</body>
+</html>
